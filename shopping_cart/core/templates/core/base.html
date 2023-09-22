@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 
 <html>
@@ -7,17 +8,19 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <title>{% block title %}{% endblock %} | VAL COSMETICS</title>
+    <link rel="stylesheet" href="{% static "style/style.css" %}">
   </head>
 
   <body>
     <nav class="px-6 py-6 flex justify-between items-center border-b border-gray-200">
-      <a href="/" class="text-xl font-semibold">VAL COSMETICS</a>
-      <div class="space-x-6">
-        <a href="#" class="text-lg font-semibold hover:text-gray-500">New item</a>
-        <a href="#" class="text-lg font-semibold hover:text-gray-500">Browse</a>
+      <a href="/" class="text-xl font-semibold"><img class="w-40" src="{% static "assets/logo.png" %}"></a>
 
-        <a href="#" class="px-6 py-3 text-lg font-semibold bg-blue-500 text-white rounded-xl hover:bg-blue-700">Sign up</a>
-        <a href="#" class="px-6 py-3 text-lg font-semibold bg-blue-400 text-white rounded-xl hover:bg-blue-700">Login</a>
+      <div class="space-x-6">
+        <a href="#" class="text-lg font-semibold text-pink-800 hover:text-pink-800">New item</a>
+        <a href="#" class="text-lg font-semibold text-pink-800 hover:text-pink-800">Browse</a>
+
+        <a href="{% url "core:signup" %}" class="px-6 py-3 text-lg font-semibold bg-pink-900 text-white rounded-xl hover:bg-pink-900">Sign up</a>
+        <a href="#" class="px-6 py-3 text-lg font-semibold bg-pink-400 text-white rounded-xl hover:bg-pink-400">Login</a>
       </div>
     </nav>
     <div class="px-6 py-6">
@@ -25,20 +28,20 @@
       {% endblock  %}
     </div>
 
-    <footer class="py-6 px-6 flex justify-between bg-gray-800"> 
+    <footer class="py-6 px-6 flex justify-between"> 
       <div class="w-2/3 pr-10">
-        <h3 class="mb-5 font-semibold text-gray-100">About</h3>
-        <p class="text-lg text-gray-100">We are a high-end cosmetics store, with more than 40 stores nationwide, <br> providing services to all our customers since 2000, <br> going through every stage of fashion to give you everything you need.</p>
+        <h3 class="mb-5 font-semibold text-pink-500">About</h3>
+        <p class="text-lg text-slate-50"><strong>We are a high-end cosmetics store, with more than 40 stores nationwide, <br> providing services to all our customers since 2000, <br> going through every stage of fashion to give you everything you need.</strong></p>
       </div>
 
       <div class="w-1/3">
-        <h3 class="mb-5 font-semibold text-gray-100">Menu</h3>        
+        <h3 class="mb-5 font-semibold text-pink-500">Menu</h3>        
         
         <ul class="space-y-2">
-          <li href="#" class="text-lg text-teal-300 hover:tet-teal-700">About</a></li>
-          <li href="{% url 'contact' %}" class="text-lg text-teal-300 hover:tet-teal-700">Contact</a></li>
-          <li href="#" class="text-lg text-teal-300 hover:tet-teal-700">Privacy policy</a></li>
-          <li href="#" class="text-lg text-teal-300 hover:tet-teal-700">Terms of use</a></li>
+          <li href="#" class="text-lg text-slate-50 hover:tet-slate-500">About</a></li>
+          <li><a href="{% url 'core:contact' %}" class="text-lg text-slate-50 hover:tet-slate-50">Contact</a></li>
+          <li href="#" class="text-lg text-slate-50 hover:tet-slate-50">Privacy policy</a></li>
+          <li href="#" class="text-lg text-slate-50 hover:tet-slate-50">Terms of use</a></li>
         </ul>
       </div>
     </footer>
