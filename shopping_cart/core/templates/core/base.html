@@ -16,7 +16,7 @@
       <a href="/" class="text-xl font-semibold"><img class="w-40" src="{% static "assets/logo.png" %}"></a>
 
       <div class="space-x-6">
-        <a href="#" class="text-lg font-semibold text-pink-800 hover:text-pink-800">New item</a>
+        <a href="{% url "item:new" %}" class="text-lg font-semibold text-pink-800 hover:text-pink-800">New item</a>
         <a href="#" class="text-lg font-semibold text-pink-800 hover:text-pink-800">Browse</a>
 
         {% if request.user.is_authenticated  %}
