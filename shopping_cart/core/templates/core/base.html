@@ -8,15 +8,15 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <title>{% block title %}{% endblock %} | VAL COSMETICS</title>
-    <link rel="stylesheet" href="{% static "style/style.css" %}">
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
   </head>
 
   <body>
     <nav class="px-6 py-6 flex justify-between items-center border-b border-gray-200">
-      <a href="/" class="text-xl font-semibold"><img class="w-40" src="{% static "assets/logo.png" %}"></a>
+      <a href="/" class="text-xl font-semibold"><img class="w-40" src="{% static 'assets/logo.png' %}"></a>
 
       <div class="space-x-6">
-        <a href="{% url "item:new" %}" class="text-lg font-semibold text-pink-800 hover:text-pink-800">New item</a>
+        <a href="{% url 'item:new' %}" class="text-lg font-semibold text-pink-800 hover:text-pink-800">New item</a>
         <a href="#" class="text-lg font-semibold text-pink-800 hover:text-pink-800">Browse</a>
 
         {% if request.user.is_authenticated  %}
@@ -26,13 +26,14 @@
 
         {% else %}
         
-        <a href="{% url "core:signup" %}" class="px-6 py-3 text-lg font-semibold bg-pink-900 text-white rounded-xl hover:bg-pink-900">Sign up</a>
-        <a href="{% url "core:login" %}" class="px-6 py-3 text-lg font-semibold bg-pink-400 text-white rounded-xl hover:bg-pink-400">Login</a>
+        <a href="{% url 'core:signup' %}" class="px-6 py-3 text-lg font-semibold bg-pink-900 text-white rounded-xl hover:bg-pink-900">Sign up</a>
+        <a href="{% url 'core:login' %}" class="px-6 py-3 text-lg font-semibold bg-pink-400 text-white rounded-xl hover:bg-pink-400">Login</a>
 
         {% endif %}
         
       </div>
     </nav>
+    
     <div class="px-6 py-6">
       {% block content %}
       {% endblock  %}

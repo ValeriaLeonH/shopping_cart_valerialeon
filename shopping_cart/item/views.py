@@ -10,7 +10,7 @@ def detail(request, pk):
   
   return render(request, 'item/detail.html', {
     'item': item,
-    'related_items': related_items
+    'related_items': related_items,
   })
 
 @login_required
