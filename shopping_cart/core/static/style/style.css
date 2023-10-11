@@ -10,4 +10,10 @@ nav{
 footer{
   /*background-color: rgb(255, 222, 255);*/
   background-color: #fbcfe8;
+  position:relative;
+  bottom: 0;
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: end;
 }
