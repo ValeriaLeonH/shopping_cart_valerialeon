@@ -1,77 +1,39 @@
 # template-readme
 
-![](https://img.shields.io/badge/Uneweb-blue)
+![SHopping cart](image.png)
 
 # Project Name
 
-> One paragraph statement about the project.
+This is a shopping cart, a web page, where you can make purchases, check prices, see reviews and write reviews about a product.
 
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- html 
+- Python
+- Django
+- VSCode
+- css 
+- Taildwin
 
 ## Authors
 
-👤 **Arístides José Molina Pérez**
+👤 **Valeria Leon Hung**
 
 - GitHub: [@aValeriaLeonH](https://github.com/ValeriaLeonH)
-- Twitter: [colocartwitter]()
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/valeria-leon-30960527a/)
+- Email: valerialeon837@gmail.com
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/ValeriaLeonH/shopping_cart_valerialeon/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
