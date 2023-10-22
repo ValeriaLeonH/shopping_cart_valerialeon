@@ -1,6 +1,6 @@
 # template-readme
 
-![SHopping cart](image.png)
+![SHopping cart](/image.png)
 
 # Project Name
 
